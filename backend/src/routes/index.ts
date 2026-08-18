@@ -1,0 +1,36 @@
+import { Router } from "express";
+import activityLogsRouter from "./activity-logs.js";
+import analyticsRouter from "./analytics.js";
+import authRouter from "./auth.js";
+import automationRouter from "./automation.js";
+import caspianRouter from "./caspian.js";
+import configRouter from "./config.js";
+import connectedAccountsRouter from "./connected-accounts.js";
+import conversationsRouter from "./conversations.js";
+import followupDraftsRouter from "./followup-drafts.js";
+import followupHistoryRouter from "./followup-history.js";
+import gmailRouter from "./gmail.js";
+import healthRouter from "./health.js";
+import notificationsRouter from "./notifications.js";
+import settingsRouter from "./settings.js";
+import trackingRulesRouter from "./tracking-rules.js";
+
+export const apiRouter = Router();
+
+apiRouter.use("/health", healthRouter);
+apiRouter.use("/config", configRouter);
+apiRouter.use("/auth", authRouter);
+apiRouter.use("/accounts", connectedAccountsRouter);
+apiRouter.use("/conversations", conversationsRouter);
+apiRouter.use("/conversations/:conversationId/drafts", followupDraftsRouter);
+apiRouter.use("/drafts", followupDraftsRouter);
+apiRouter.use("/conversations/:conversationId/followups", followupHistoryRouter);
+apiRouter.use("/followups", followupHistoryRouter);
+apiRouter.use("/tracking-rules", trackingRulesRouter);
+apiRouter.use("/automation", automationRouter);
+apiRouter.use("/gmail", gmailRouter);
+apiRouter.use("/caspian", caspianRouter);
+apiRouter.use("/notifications", notificationsRouter);
+apiRouter.use("/activity-logs", activityLogsRouter);
+apiRouter.use("/analytics", analyticsRouter);
+apiRouter.use("/settings", settingsRouter);

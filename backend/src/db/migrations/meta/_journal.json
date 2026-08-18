@@ -1,0 +1,43 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1786125011220,
+      "tag": "0000_little_hitman",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1786125468526,
+      "tag": "0001_loose_wrecking_crew",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1786131478828,
+      "tag": "0002_slim_zaladane",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": 7,
+      "when": 1786452900000,
+      "tag": "0003_fix_gmail_send_permission",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": 7,
+      "when": 1786500000000,
+      "tag": "0004_retry_working_hours_auto_send",
+      "breakpoints": true
+    }
+  ]
+}
+  ]
+}
